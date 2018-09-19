@@ -22,6 +22,7 @@ public class EmployeController {
 	
 	@GetMapping("/list")
 	public List<Employe> findAll(){
+		
 		return employeService.findAll();
 	}
 	
