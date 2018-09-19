@@ -10,6 +10,6 @@ public interface IEmployeService {
 	public void delete(Employe employe);
 	public void update(Employe employe);
 	public List<Employe> findAll();
-	public Employe findOne(Integer id);
+	public Employe findOne(int id);
 
 }

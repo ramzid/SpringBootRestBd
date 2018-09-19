@@ -31,6 +31,7 @@ public class EmployeService implements IEmployeService{
 	@Override
 	public void update(Employe employe) {
 		// TODO Auto-generated method stub
+		if(findOne(employe.getId())!=null)
 		employeDao.save(employe);
 	}
 
@@ -41,7 +42,7 @@ public class EmployeService implements IEmployeService{
 	}
 
 	@Override
-	public Employe findOne(Integer id) {
+	public Employe findOne(int id) {
 		// TODO Auto-generated method stub
 		return employeDao.getOne(id);
 	}
